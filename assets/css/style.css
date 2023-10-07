@@ -4,11 +4,13 @@
     Version: 1.0
 */
 
-h2 {
-    color: green;
-    background-color: red;
+header{
+    border: solid red 1px;
+    text-align: center;
 }
-div{
 
-    color: red;
+footer{
+    border: solid blue 1px;
+    text-align: center;
 }
+

@@ -5,16 +5,17 @@
 
 <div>
     <?php
-        while(have_posts( )){
+        if(have_posts()){
+            while(have_posts( )){
             the_post();
             ?>
-                <h2><?php the_title(); ?></h2>
+                <h2 class="testing"><?php the_title(); ?></h2>
                 <?php the_content(); ?>
                 <hr>
-                <div class="target">TESTING CSS</div>
-
             <?php
+            } 
         }
+
     ?>
 </div>
 
