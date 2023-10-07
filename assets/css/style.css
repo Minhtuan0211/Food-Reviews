@@ -4,10 +4,36 @@
     Version: 1.0
 */
 
-header{
+/* Header Styles */
+#page_header{
     border: solid red 1px;
-    text-align: center;
+    display: flex;
 }
+#page_header h1{
+    flex-grow: 1;
+}
+#page_header div{
+    border: solid green 2px;
+    flex-grow: 1;
+
+}
+.menu_item{
+    border: solid blue 1px;
+    list-style-type: none;
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+    color: red;
+}
+
+
+
+
+
+
+
+
+
 
 footer{
     border: solid blue 1px;

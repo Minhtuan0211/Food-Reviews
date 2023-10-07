@@ -8,6 +8,18 @@
         wp_head();
     ?>
     <body>
-        <header>
-            This is the header
+        <header id="page_header">
+            <h1>This is the header</h1>
+            <div></div>
+            <?php
+            wp_nav_menu(
+                array(
+                    'menu' => 'primary',
+                    'container' => '',
+                    'theme' => 'primary',
+                    'items_wrap' => '<ul class="menu_item" >%3$s</ul>',
+                )
+            )
+            ?>
+            
         </header>

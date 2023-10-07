@@ -6,6 +6,17 @@ function foodreviews_theme_support (){
 
 add_action('after_setup_theme', 'foodreviews_theme_support');
 
+function foodreviews_menus(){
+
+    $locations = array(
+        'primary' => "Desktop Primary",
+        'footer' => "Footer Menu Items"
+    );
+
+    register_nav_menus($locations);
+}
+
+add_action('init', 'foodreviews_menus');
 
 function foodreviews_register_styles (){
     $version = wp_get_theme()->get('Version');
