@@ -9,6 +9,14 @@
     ?>
     <body>
         <header id="page_header">
+            <?php
+                if(function_exists('the_custom_logo')){
+                    $custom_logo_id = get_theme_mod('custom_logo');
+                    $logo = wp_get_attachment_image_src($custom_logo_id);
+                }
+            ?>
+            <img src="<?php echo $logo[0] ?>" alt="logo" />
+
             <h1>This is the header</h1>
             <div></div>
             <?php

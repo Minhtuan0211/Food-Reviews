@@ -29,9 +29,12 @@
 .menu_item > a {
     color: red;
     text-decoration: none;
-
 }
 
+.menu_item > a:hover {
+    color: green;
+    transition: 1s;
+}
 
 
 
