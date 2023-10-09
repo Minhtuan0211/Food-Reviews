@@ -17,14 +17,21 @@
     flex-grow: 1;
 
 }
-.menu_item{
+.menu_items{
     border: solid blue 1px;
     list-style-type: none;
     display: flex;
     flex-grow: 1;
     justify-content: space-between;
-    color: red;
+    color:green;
 }
+
+.menu_item > a {
+    color: red;
+    text-decoration: none;
+
+}
+
 
 
 

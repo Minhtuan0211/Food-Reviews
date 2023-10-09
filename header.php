@@ -17,7 +17,7 @@
                     'menu' => 'primary',
                     'container' => '',
                     'theme' => 'primary',
-                    'items_wrap' => '<ul class="menu_item" >%3$s</ul>',
+                    'items_wrap' => '<ul class="menu_items" >%3$s</ul>',
                 )
             )
             ?>
