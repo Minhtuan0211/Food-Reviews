@@ -6,6 +6,7 @@
     </head>
     <?php
         wp_head();
+
     ?>
     <body>
         <header id="page_header">
