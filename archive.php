@@ -3,19 +3,18 @@
 ?>
 
 
-<div>
-    <div>This is index.php but is the archive page in wp</div>
+<article>
+    <div>archive.php working</div>
     <?php
         if(have_posts()){
             while(have_posts( )){
             the_post();
             get_template_part('template-parts/content', 'archive');
-            
             } 
         }
 
     ?>
-</div>
+</article>
 
 
 
