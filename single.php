@@ -4,7 +4,7 @@
 
 
 <article>
-    <div>single.php working</div>
+    <div>single.php working, used to display singular posts</div>
     <?php
         if(have_posts()){
             while(have_posts( )){
