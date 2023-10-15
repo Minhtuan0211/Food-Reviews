@@ -4,51 +4,6 @@
     Version: 1.0
 */
 
-/* Header Styles */
-#page_header{
-    border: solid red 1px;
-    display: flex;
-}
-#page_header h1{
-    flex-grow: 1;
-}
-#page_header div{
-    border: solid green 2px;
-    flex-grow: 1;
+                                                        /* HEADER STYLES */
 
-}
-.menu_items{
-    border: solid blue 1px;
-    list-style-type: none;
-    display: flex;
-    flex-grow: 1;
-    justify-content: space-between;
-    color:green;
-}
-
-.menu_item > a {
-    color: red;
-    text-decoration: none;
-}
-
-.menu_item > a:hover {
-    color: green;
-    transition: 1s;
-}
-
-
-.testing{
-    border: solid black 1px;
-}
-
-
-
-
-
-
-
-footer{
-    border: solid blue 1px;
-    text-align: center;
-}
-
+/* Logo and Title */

@@ -22,13 +22,25 @@ add_action('init', 'foodreviews_menus');
 
 function foodreviews_register_styles (){
     $version = wp_get_theme()->get('Version');
+    wp_enqueue_style('foodreviews-style', "https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css", array(), $version, 'all');
     wp_enqueue_style('foodreviews-style', get_template_directory_uri() . "/style.css", array(), $version, 'all');
 }
 
 add_action('wp_enqueue_scripts', 'foodreviews_register_styles');
 
+function add_additional_class_on_a($classes, $item, $args)
+{
+    if (isset($args->add_a_class)) {
+        $classes['class'] = $args->add_a_class;
+    }
+    return $classes;
+}
+
+add_filter('nav_menu_link_attributes', 'add_additional_class_on_a', 1, 3);
+
 
 function foodreviews_register_scripts (){
+    wp_enqueue_script('foodreviews-bsscript', "https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js", array(), '3.4.1', true);
     wp_enqueue_script('foodreviews-script', get_template_directory_uri() . "/assets/js/script.js", array(), '3.4.1', true);
 }
 
