@@ -7,3 +7,25 @@
                                                         /* HEADER STYLES */
 
 /* Logo and Title */
+#page-header{
+    border: solid red 2px;
+    display: flex;
+}
+.header-title{
+    border: solid green 1px;
+    display: flex;
+    flex-grow: 0.5;
+    align-items: center;
+}
+.menu-list{
+    border: solid blue 2px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-grow: 1;
+    list-style-type: none;
+
+}
+.menu-list a{
+    text-decoration: none;
+}
