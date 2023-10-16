@@ -13,6 +13,7 @@
             <!-- <?php
                 dynamic_sidebar('sidebar-1')
             ?> -->
+            
             <div class="header-title">
                 <?php
                     if(function_exists('the_custom_logo')){
@@ -34,16 +35,26 @@
                     )
                 )
             ?>
-            <div class="dropdown-container">
-                <div class="dropdown display-active">
-                    <button class="dropbtn">Dropdown 
-                        <i class="fa fa-caret-down"></i>
+            <div class="dropdown-container display-active ">
+                <div class="dropdown">
+                    <button class="dropbtn"> 
+                        <img src="<?php echo get_template_directory_uri() . "/assets/icons/dropdown-menu.svg" ?>" alt="dropdown menu" width="25" height="25">
                     </button>
-                    <div class="dropdown-content">
+                    <?php
+                        wp_nav_menu(
+                            array(
+                                'menu' => 'primary',
+                                'container' => '',
+                                'theme' => 'primary',
+                                'items_wrap' => '<ul class="dropdown-content">%3$s</ul>',
+                            )
+                        )
+                    ?>
+                    <!-- <div class="dropdown-content">
                         <a href="#">Link 1</a>
                         <a href="#">Link 2</a>
                         <a href="#">Link 3</a>
-                    </div>
+                    </div> -->
                 </div> 
             </div>
                 

@@ -38,7 +38,6 @@
     align-items: center;
     flex-grow: 1;
     list-style-type: none;
-
 }
 .menu-list a{
     text-decoration: none;
@@ -61,34 +60,34 @@
 }
 .dropdown {
     position: relative;
-    border: solid red 2px;
-    display: none;
 }
 
 .dropdown .dropbtn {
     font-size: 16px;  
-    border: none;
+    border: solid gray 1px;
+    border-radius: 15%;
     outline: none;
     color: black;
-    padding: 14px 16px;
-    background-color: inherit;
-    font-family: inherit;
+    padding: 5px 10px;
     margin: 0;
+    cursor: pointer;
 }
 
 .navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: red;
+    background-color: #ddd;
+    border: solid black 1px;
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: green;
+    background-color: #f9f9f9;
     transform: translate(-50%,0%);
     left: 50%;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+    list-style-type: none;
 }
 
 .dropdown-content a {
@@ -97,6 +96,7 @@
     text-decoration: none;
     display: block;
     text-align: left;
+    border-bottom: solid gray 1px;
 }
 
 .dropdown-content a:hover {
@@ -107,9 +107,12 @@
     display: block;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (min-width: 800px) {
     .display-active{
-        display: block;
-
+        display: none;
     }
 }
+
+
+
+/* Footer Styles */
