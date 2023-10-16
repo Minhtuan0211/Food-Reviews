@@ -21,7 +21,7 @@
                     }
                 ?>
                 <img src="<?php echo $logo[0] ?>" alt="logo" />
-                <div>Food reviewa</div>
+                <h2>Food reviews</h2>
             </div>
             
             <?php

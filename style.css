@@ -4,12 +4,26 @@
     Version: 1.0
 */
 
+                                                        /* GENERAL STYLES */
+
+:root{
+}
+
+*, *:before, *:after{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Raleway', sans-serif;
+}
+
+
                                                         /* HEADER STYLES */
 
 /* Logo and Title */
 #page-header{
     border: solid red 2px;
     display: flex;
+    padding: 20px;
 }
 .header-title{
     border: solid green 1px;
