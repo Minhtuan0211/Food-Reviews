@@ -118,3 +118,24 @@ a:hover, .dropdown:hover .dropbtn {
 
                                                 /* Footer Styles */
 
+.page-footer{
+    border: solid yellow 1px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer-container{
+    border: solid green 1px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.tempborder{
+    border: solid red 1px;
+}
+
+.footer-cc{
+    margin-top: 10px;
+}
