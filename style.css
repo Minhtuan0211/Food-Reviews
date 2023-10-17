@@ -73,7 +73,8 @@
     cursor: pointer;
 }
 
-.navbar a:hover, .dropdown:hover .dropbtn {
+/* THIS IS A GENEARL A TAG */
+a:hover, .dropdown:hover .dropbtn {
     background-color: #ddd;
     border: solid black 1px;
 }
@@ -115,4 +116,5 @@
 
 
 
-/* Footer Styles */
+                                                /* Footer Styles */
+
