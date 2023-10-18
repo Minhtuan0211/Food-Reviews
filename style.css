@@ -139,3 +139,9 @@ a:hover, .dropdown:hover .dropbtn {
 .footer-cc{
     margin-top: 10px;
 }
+
+                                /* Template parts: content-archive styles */
+.archive-posts-container{
+    display: flex;
+    border: solid red 1px;
+}
