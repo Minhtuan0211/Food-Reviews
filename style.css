@@ -145,3 +145,7 @@ a:hover, .dropdown:hover .dropbtn {
     display: flex;
     border: solid red 1px;
 }
+
+.posts-img-temp{
+    background-color: gray;
+}

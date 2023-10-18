@@ -27,7 +27,9 @@
             <div class="footer-cc tempborder">
                 <p>© The Food Reviewer 2023. Privacy Policy.</p>
             </div>
-
+            <?php
+                dynamic_sidebar('footer-1')
+            ?> 
         </footer>
         <?php
             wp_footer();
