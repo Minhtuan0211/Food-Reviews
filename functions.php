@@ -63,4 +63,16 @@ function foodreviews_widget_areas(){
 
 add_action('widgets_init', 'foodreviews_widget_areas');
 
+function wpdocs_excerpt_more( $more ) {
+	if ( ! is_single() ) {
+		$more = sprintf( '<span>...</span><br><a class="read-more" href="%1$s">%2$s</a>',
+			get_permalink( get_the_ID() ),
+			__( 'Read More', 'textdomain' )
+		);
+	}
+
+	return $more;
+}
+add_filter( 'excerpt_more', 'wpdocs_excerpt_more' );
+
 ?>

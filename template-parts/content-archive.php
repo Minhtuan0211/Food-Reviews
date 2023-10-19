@@ -43,9 +43,9 @@
             the_excerpt();
         ?>
 
-        <h2>
+        <!-- <h2>
             <a href="<?php the_permalink(); ?>" >Read more</a>
-        </h2>
+        </h2> -->
     </div>
     
 </div>
