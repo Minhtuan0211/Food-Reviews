@@ -1,5 +1,3 @@
-<div>content archive.php working</div>
-
 <div class="archive-posts-container">
 
     <div class="posts-img">
@@ -20,32 +18,29 @@
     </div>
 
     <div class="posts-info">
-        <div>
             <a href="<?php the_permalink(); ?>" >
                 <?php
-                    the_title();
+                    the_title('<h3>', '</h3>');
                 ?>
             </a>
+        <div class="posts-info-data">
+            <p>
+                <?php
+                    echo get_the_date();
+                ?>
+            </p>
+            <p>
+                <?php
+                    comments_number();
+                ?>
+            </p> 
         </div>
-        <div>
+       
+        <p class="posts-info-excerpt">
             <?php
-                the_date();
-            ?>
-        </div>
-
-        <div>
-            <?php
-                comments_number();
-            ?>
-        </div>
-
-        <?php
-            the_excerpt();
-        ?>
-
-        <!-- <h2>
-            <a href="<?php the_permalink(); ?>" >Read more</a>
-        </h2> -->
+                the_excerpt();
+            ?>  
+        </p>
     </div>
     
 </div>
