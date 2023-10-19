@@ -73,8 +73,8 @@
     cursor: pointer;
 }
 
-/* THIS IS A GENEARL A TAG */
-a:hover, .dropdown:hover .dropbtn {
+/* THIS IS A GENEARL A TAG, there was an a:hover, below as a selector*/
+ .dropdown:hover .dropbtn {
     background-color: #ddd;
     border: solid black 1px;
 }
@@ -144,12 +144,46 @@ a:hover, .dropdown:hover .dropbtn {
 .archive-posts-container{
     display: flex;
     border: solid red 1px;
+    padding: 20px;
+}
+
+.posts-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
 }
 
 .posts-img-temp{
     background-color: gray;
 }
 
-.read-more{
-    
+
+.posts-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.posts-info-data{
+    display: flex;
+    font-size: small;
+    color: gray;
+    margin-top: 5px;
+}
+
+.posts-info-data p {
+    margin-right: 10px;
+}
+
+.posts-info-excerpt{
+    margin-top: 2px;
+}
+
+
+
+.read-more :hover{
+    color: red;
+    background-color: yellow;
+    border: solid red 2px;
 }
