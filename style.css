@@ -136,7 +136,15 @@
     border: solid red 1px;
 }
 
-.footer-cc{
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+}
+.footer-list a {
+    text-decoration: none;
+}
+.footer-cc {
     margin-top: 10px;
 }
 
@@ -198,12 +206,16 @@
     margin-bottom: 10px;
 }
 
-.article-tags-container{
-    
-}
 .article-tags a{
     background-color: #ddd;
     color: black;
     text-decoration: none;
     margin-right: 5px;
+}
+
+/* Comments styling */
+
+.comments-box{
+    border: solid red 1px;
+    display: flex;
 }

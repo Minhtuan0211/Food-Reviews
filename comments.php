@@ -8,7 +8,7 @@
     }
 ?>
 
-<div class="comments_box">
+<div class="comments-box">
     <?php
         wp_list_comments(
             array(

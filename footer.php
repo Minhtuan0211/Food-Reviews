@@ -6,10 +6,16 @@
                 </div>
 
                 <ul class="footer-col2 tempborder">
-                    <li>Main</li>
-                    <li>About</li>
-                    <li>Recipes</li>
-                    <li>Archive</li>
+                    <?php
+                        wp_nav_menu(
+                            array(
+                                'menu' => 'footer',
+                                'container' => '',
+                                'theme' => 'footer',
+                                'items_wrap' => '<ul class="footer-list">%3$s</ul>',
+                            )
+                        )
+                    ?>
                 </ul>
 
                 <ul class="footer-col3 tempborder">
