@@ -1,19 +1,22 @@
+<?php 
+    function disable_widget ($name){
+        if(! is_active_sidebar($name)){
+            echo "disabled";
+        }
+    }
+?> 
+
         <footer class="page-footer">
             <div class="footer-container">
 
-                <div class="footer-col1 tempborder <?php 
-                        if(! is_active_sidebar("footer-2")){
-                            echo "disabled";
-                        }
-                        
-                    ?> ">
+                <div class="footer-col1 tempborder <?php disable_widget("footer-2")?> ">
                     <!-- Search bar -->
                     <?php
                         dynamic_sidebar('footer-2')
                     ?> 
                 </div>
 
-                <ul class="footer-col2 tempborder">
+                <ul class="footer-col2 tempborder <?php disable_widget("footer-1")?>">
                 <?php
                     dynamic_sidebar('footer-1')
                 ?> 
