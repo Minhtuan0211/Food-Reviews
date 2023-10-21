@@ -24,9 +24,6 @@
 
                 <ul class="footer-col3 tempborder">
                     <li>Follow</li>
-                    <?php
-                        print_r(is_active_sidebar("footer-2"))
-                    ?>
                     <li>Instagram</li>
                     <li>Facebook</li>
                     <li>Twitter</li>
