@@ -1,7 +1,13 @@
         <footer class="page-footer">
             <div class="footer-container">
 
-                <div class="footer-col1 tempborder">
+                <div class="footer-col1 tempborder <?php 
+                        if(! is_active_sidebar("footer-2")){
+                            echo "disabled";
+                        }
+                        
+                    ?> ">
+                    <!-- Search bar -->
                     <?php
                         dynamic_sidebar('footer-2')
                     ?> 
@@ -15,6 +21,9 @@
 
                 <ul class="footer-col3 tempborder">
                     <li>Follow</li>
+                    <?php
+                        print_r(is_active_sidebar("footer-2"))
+                    ?>
                     <li>Instagram</li>
                     <li>Facebook</li>
                     <li>Twitter</li>

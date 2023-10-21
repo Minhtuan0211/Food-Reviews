@@ -16,6 +16,9 @@
 	font-family: 'Raleway', sans-serif;
 }
 
+.disabled{
+    display: none;
+}
 
                                                         /* HEADER STYLES */
 
@@ -218,3 +221,5 @@
     border: solid red 1px;
     display: flex;
 }
+
+
