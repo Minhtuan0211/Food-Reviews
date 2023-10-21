@@ -52,8 +52,8 @@ function foodreviews_widget_areas(){
         array(
             'before_title'=> '<h2>',
             'after_title'=> '</h2>',
-            'before_widget'=> '',
-            'after_widget'=> '',
+            'before_widget'=> '<div class="footer-list">',
+            'after_widget'=> '</div>',
             'name' => 'Footer Area',
             'id' => 'footer-1',
             'description' => 'Footer Widget Area',

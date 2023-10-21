@@ -6,16 +6,9 @@
                 </div>
 
                 <ul class="footer-col2 tempborder">
-                    <?php
-                        wp_nav_menu(
-                            array(
-                                'menu' => 'footer',
-                                'container' => '',
-                                'theme' => 'footer',
-                                'items_wrap' => '<ul class="footer-list">%3$s</ul>',
-                            )
-                        )
-                    ?>
+                <?php
+                dynamic_sidebar('footer-1')
+            ?> 
                 </ul>
 
                 <ul class="footer-col3 tempborder">
@@ -33,9 +26,7 @@
             <div class="footer-cc tempborder">
                 <p>© The Food Reviewer 2023. Privacy Policy.</p>
             </div>
-            <?php
-                dynamic_sidebar('footer-1')
-            ?> 
+            
         </footer>
         <?php
             wp_footer();

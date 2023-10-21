@@ -136,13 +136,12 @@
     border: solid red 1px;
 }
 
-.footer-list {
-    display: flex;
-    flex-direction: column;
-    list-style-type: none;
-}
-.footer-list a {
+
+.footer-list li, a {
+    color: inherit;
     text-decoration: none;
+    list-style-type: none;
+
 }
 .footer-cc {
     margin-top: 10px;
