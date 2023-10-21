@@ -59,6 +59,17 @@ function foodreviews_widget_areas(){
             'description' => 'Footer Widget Area',
         )
     );
+    register_sidebar(
+        array(
+            'before_title'=> '<h4>',
+            'after_title'=> '</h4>',
+            'before_widget'=> '<div>',
+            'after_widget'=> '</div>',
+            'name' => 'Footer Search Area',
+            'id' => 'footer-2',
+            'description' => 'Footer Search Widget Area',
+        )
+    );
 }
 
 add_action('widgets_init', 'foodreviews_widget_areas');

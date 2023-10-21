@@ -2,13 +2,15 @@
             <div class="footer-container">
 
                 <div class="footer-col1 tempborder">
-                    <div>Search Bar</div>
+                    <?php
+                        dynamic_sidebar('footer-2')
+                    ?> 
                 </div>
 
                 <ul class="footer-col2 tempborder">
                 <?php
-                dynamic_sidebar('footer-1')
-            ?> 
+                    dynamic_sidebar('footer-1')
+                ?> 
                 </ul>
 
                 <ul class="footer-col3 tempborder">
