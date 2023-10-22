@@ -13,7 +13,7 @@
             <!-- <?php
                 dynamic_sidebar('sidebar-1')
             ?> -->
-            
+            <!-- app.logomakr.com/2DoqmM -->
             <div class="header-title">
                 <?php
                     if(function_exists('the_custom_logo')){
@@ -22,7 +22,6 @@
                     }
                 ?>
                 <img src="<?php echo $logo[0] ?>" alt="logo" />
-                <h2>Food reviews</h2>
             </div>
             
             <?php

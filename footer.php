@@ -22,11 +22,10 @@
                 ?> 
                 </ul>
 
-                <ul class="footer-col3 tempborder">
-                    <li>Follow</li>
-                    <li>Instagram</li>
-                    <li>Facebook</li>
-                    <li>Twitter</li>
+                <ul class="footer-col3 tempborder <?php disable_widget("footer-3")?>">
+                    <?php
+                        dynamic_sidebar('footer-3')
+                    ?> 
                 </ul>
 
                 <div class="footer-col4 tempborder">
