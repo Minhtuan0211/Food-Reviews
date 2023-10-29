@@ -149,6 +149,12 @@
 .footer-cc {
     margin-top: 10px;
 }
+#footer-newsletter{
+    display: flex;
+}
+.form-elements{
+    margin: 0 5px 0 5px;
+}
 
                                 /* Template parts: content-archive styles */
 .archive-posts-container{

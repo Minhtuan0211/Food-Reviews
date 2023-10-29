@@ -29,7 +29,12 @@
                 </ul>
 
                 <div class="footer-col4 tempborder">
-                    <div>Join newsletter</div>
+                <div>Join our newsletter!</div>
+                <form id="footer-newsletter">
+                    <label class="form-elements" for="email">Email:</label><br>
+                    <input class="form-elements" type="text" name="email"><br>
+                    <input class="form-elements" type="submit" value="Submit">
+                </form>
                 </div>
             </div>
             
