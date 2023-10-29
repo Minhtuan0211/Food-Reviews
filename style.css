@@ -6,8 +6,8 @@
 
                                                         /* GENERAL STYLES */
 
-:root{
-}
+/* :root{
+} */
 
 *, *:before, *:after{
 	margin: 0;
@@ -122,21 +122,22 @@
                                                 /* Footer Styles */
 
 .page-footer{
-    border: solid yellow 1px;
-    padding: 10px 20px;
+    border-top: solid gray 1px;
+    padding: 20px 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 .footer-container{
-    border: solid green 1px;
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
 .tempborder{
-    border: solid red 1px;
+    /* border: solid red 1px; */
+    border-left: solid #6B7A8F 2px;
+    padding-left: 10px;
 }
 
 
@@ -147,10 +148,10 @@
 
 }
 .footer-cc {
-    margin-top: 10px;
+    margin-top: 40px;
 }
 .footer-col4{
-    background-color: #E23D28;
+    background-color: #6B7A8F;
     max-width: 500px;
     width: 100%;
     padding: 20px;
@@ -159,16 +160,22 @@
     justify-content: center;
     align-items: center;
 }
+
+.footer-col4 p {
+    padding: 15px;
+}
 #footer-form{
     display: flex;
 }
 .form-elements{
     margin: 0 5px 0 5px;
+    border: solid #d8d8d8 5px;
     border-style: solid;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
     outline: none;
     color: #808080;
-    border-top: solid blue 5px;
-    border-color: green;
     border-radius: 0;
 }
 
@@ -176,6 +183,7 @@
     margin: 0 5px 0 5px;
     height: 50px;
     width: 50px;
+    font-weight: bold;
 }
 
 
