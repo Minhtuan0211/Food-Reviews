@@ -15,13 +15,14 @@
                         dynamic_sidebar('footer-2')
                     ?> 
                 </div>
-
+                    <!-- Menu -->
                 <ul class="footer-col2 tempborder <?php disable_widget("footer-1")?>">
                 <?php
                     dynamic_sidebar('footer-1')
                 ?> 
                 </ul>
 
+                    <!-- Social -->
                 <ul class="footer-col3 tempborder <?php disable_widget("footer-3")?>">
                     <?php
                         dynamic_sidebar('footer-3')
@@ -30,10 +31,10 @@
 
                 <div class="footer-col4 tempborder">
                 <div>Join our newsletter!</div>
-                <form id="footer-newsletter">
-                    <label class="form-elements" for="email">Email:</label><br>
-                    <input class="form-elements" type="text" name="email"><br>
-                    <input class="form-elements" type="submit" value="Submit">
+                <form id="footer-form">
+                    <input class="form-elements" placeholder="Name" type="text" name="name">
+                    <input class="form-elements" placeholder="Email" type="text" name="email">
+                    <input id="form-submit"  type="submit" value="Go">
                 </form>
                 </div>
             </div>

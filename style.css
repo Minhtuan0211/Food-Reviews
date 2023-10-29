@@ -149,12 +149,35 @@
 .footer-cc {
     margin-top: 10px;
 }
-#footer-newsletter{
+.footer-col4{
+    background-color: #E23D28;
+    max-width: 500px;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#footer-form{
     display: flex;
 }
 .form-elements{
     margin: 0 5px 0 5px;
+    border-style: solid;
+    outline: none;
+    color: #808080;
+    border-top: solid blue 5px;
+    border-color: green;
+    border-radius: 0;
 }
+
+#form-submit{
+    margin: 0 5px 0 5px;
+    height: 50px;
+    width: 50px;
+}
+
 
                                 /* Template parts: content-archive styles */
 .archive-posts-container{
