@@ -23,6 +23,8 @@ add_action('init', 'foodreviews_menus');
 function foodreviews_register_styles (){
     $version = wp_get_theme()->get('Version');
     wp_enqueue_style('foodreviews-style', get_template_directory_uri() . "/style.css", array(), $version, 'all');
+    wp_enqueue_style('bootstrap-style', "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css", array());
+
 }
 
 add_action('wp_enqueue_scripts', 'foodreviews_register_styles');
