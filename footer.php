@@ -41,8 +41,7 @@
             
             <div class="footer-cc">
                 <p>© The Food Reviewer 2023. Privacy Policy.</p>
-                <i class="bi bi-instagram"></i>
-
+                
             </div>
             
         </footer>
