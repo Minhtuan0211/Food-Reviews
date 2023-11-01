@@ -129,17 +129,22 @@
     justify-content: center;
     align-items: center;
 }
+
 .footer-container{
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
-.tempborder{
-    /* border: solid red 1px; */
-    border-left: solid #6B7A8F 2px;
-    padding-left: 10px;
-}
 
+#footer-info{
+    display: flex;
+}
+#footer-info li{
+    margin: 10px;
+}
+#footer-info ul{
+    margin: 10px;
+}
 
 .footer-list li, a {
     color: inherit;
@@ -215,12 +220,12 @@
         flex-direction: column;
         border: solid red 1px;
     }
+    
+    
     .footer-col4{
         max-width: 100%;
     }
-    .tempborder{
-        border: none;
-    }
+   
 }
 
 

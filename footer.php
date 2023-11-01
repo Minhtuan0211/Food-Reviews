@@ -9,26 +9,27 @@
         <footer class="page-footer">
             <div class="footer-container">
 
-                <div class="footer-col1 <?php disable_widget("footer-2")?> ">
+                <div class="footer-col1  <?php disable_widget("footer-2")?> ">
                     <!-- Search bar -->
                     <?php
                         dynamic_sidebar('footer-2')
                     ?> 
                 </div>
-                    <!-- Menu -->
-                <ul class="footer-col2 tempborder <?php disable_widget("footer-1")?>">
-                <?php
-                    dynamic_sidebar('footer-1')
-                ?> 
-                </ul>
-
-                    <!-- Social -->
-                <ul class="footer-col3 tempborder <?php disable_widget("footer-3")?>">
+                <div id="footer-info">
+                        <!-- Menu -->
+                    <ul class="footer-col2 tempborder  <?php disable_widget("footer-1")?>">
                     <?php
-                        dynamic_sidebar('footer-3')
+                        dynamic_sidebar('footer-1')
                     ?> 
-                </ul>
+                    </ul>
 
+                        <!-- Social -->
+                    <ul class="footer-col3 tempborder  <?php disable_widget("footer-3")?>">
+                        <?php
+                            dynamic_sidebar('footer-3')
+                        ?> 
+                    </ul>
+                </div>
                 <div class="footer-col4 ">
                     <p>Join our newsletter!</p>
                     <form id="footer-form">
