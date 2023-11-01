@@ -24,24 +24,47 @@
 
 /* Logo and Title */
 #page-header{
-    border: solid red 2px;
     display: flex;
-    padding: 20px;
+    padding: 5px 20px;
+    border-bottom: solid gray 1px;
+
 }
 .header-title{
-    border: solid green 1px;
     display: flex;
     flex-grow: 0.5;
     align-items: center;
 }
 .menu-list{
-    border: solid blue 2px;
+    max-width: 600px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-grow: 1;
     list-style-type: none;
+    font-weight: bold;
 }
+.menu-list li {
+    position: relative;
+}
+
+.menu-list li::after{
+    content: "";
+    bottom: 0;
+    left: 50%;
+    display: inline-block;
+    width: 0%;
+    transform: translate(-50%,50%);
+    position: absolute;
+    border: solid red 1px;
+    color: red;
+    transition: width 0.5s ease;
+    opacity: 0;
+}
+.menu-list li:hover::after{
+    width: 100%;
+    opacity: 1;
+}
+
 .menu-list a{
     text-decoration: none;
 }
@@ -53,11 +76,10 @@
 }
 
 
-                                            /* Dropdown  */
+                                                            /* Dropdown  */
 .dropdown-container{
     display: flex;
     flex-grow: 1;
-    border: solid green 2px;
     justify-content: center;
     align-items: center;
 }
@@ -77,7 +99,7 @@
 }
 
 /* THIS IS A GENEARL A TAG, there was an a:hover, below as a selector*/
- .dropdown:hover .dropbtn {
+.dropdown:hover .dropbtn {
     background-color: #ddd;
     border: solid black 1px;
 }
@@ -233,7 +255,6 @@
                                 /* Template parts: content-archive styles */
 .archive-posts-container{
     display: flex;
-    border: solid red 1px;
     padding: 20px;
 }
 
