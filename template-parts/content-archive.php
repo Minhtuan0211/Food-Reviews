@@ -35,12 +35,14 @@
                 ?>
             </p> 
         </div>
-       
+
         <p class="posts-info-excerpt">
             <?php
                 the_excerpt();
             ?>  
         </p>
     </div>
-    
+</div>
+<div class="posts-line-container">
+    <hr class="posts-line-break">
 </div>
