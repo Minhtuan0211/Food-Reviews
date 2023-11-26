@@ -17,12 +17,10 @@
     ?>
 </div>
 
-<div>
+<div class="posts-pagination-container">
     <?php
         the_posts_pagination();
     ?>
-
-
 </div>
 
 

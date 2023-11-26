@@ -302,9 +302,33 @@
     margin-top: 2px;
 }
 
+.posts-pagination-container{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* These are classes added by WP viewable in inspect */
 
+.nav-links{
+    display: flex;
+    justify-content: center;
+}
+.nav-links > *{
+    margin: 5px;
+}
 
-.read-more :hover{
+.page-numbers{
+    display: flex;
+    justify-content: center;
+    width: 30px;
+}
+
+.page-numbers:hover:not(.current){
+    background-color: #ddd;
+}
+
+.read-more:hover{
     color: red;
     background-color: yellow;
     border: solid red 2px;
